@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+body{
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.header{
+  overflow: hidden;
+  background: gray;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-nav{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  max-width: 80%;
+  margin: auto;
+}
+.main-nav .logo h2{
+  overflow: hidden;
+  padding-top: 10px;
+  color: white;
+
+}
+.menu-right ul li{
+  list-style: none;
+  display: inline-block;
+  padding-top: 20px;
+}
+.menu-right ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding-right: 10px;
+  color: white;
+  font-weight: bold;
+
+}
+.footer{
+  background: gray;
+}
+.main-footer{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  max-width: 80%;
+  margin: auto;
+  grid-gap: 10px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.main-footer ul li{
+  list-style: none;
+}
+.main-footer ul li a{
+  color: white;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-movie{
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.logo a{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.search-bar{
+  width: 60%;
+  padding: 10px;
+  border:none;
+  background: white;
+  color: black;
+  outline: none;
+}
+.search-button{
+  background: lightcoral;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+}
+.home{
+  min-height: 80vh;
+  background: whitesmoke;
+}
+.container{
+  margin-top: 30px;
+}
+.notfound{
+  justify-content: center;
+  margin:0 auto;
+  align-items: center;
+  margin-left: 30% ;
+
+}
+.notfound h3{
+  margin-bottom: 20px;
+}
+.notfound a{
+  text-decoration: none;
+ font-weight: bold;
+  font-size: 20px;
+  background: black;
+  color: white;
+  margin-top: 20px;
+  margin-left: 80px;
+  border-radius: 5px;
+  padding: 20px;
+
 }
