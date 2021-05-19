@@ -6,14 +6,12 @@ import store from "./Store";
 import {Provider} from "react-redux";
 import {HashRouter as Router,Route,Switch} from "react-router-dom";
 import SingleMovie from "./Home/SingleMovie";
-import { createBrowserHistory } from "history";
 
-const hist = createBrowserHistory();
 
 function App() {
   return (
       <Provider store={store}>
-        <Router history={hist}>
+        <Router >
     <div className="app">
       <Navbar/>
       <Switch>

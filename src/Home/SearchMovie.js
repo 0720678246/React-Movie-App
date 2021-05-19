@@ -20,7 +20,7 @@ class  SearchMovie extends Component{
         return(
             <div>
                 <form className="search-movie" onSubmit={this.getMovies}>
-                    <input type="text"  className="search-bar" onChange={this.onChange} placeholder="search movie....."/>
+                    <input type="text"  className="search-bar" autoFocus="true" autoComplete="true" onChange={this.onChange} placeholder="search movie....."/>
                     <button type="submit" className="search-button">Search</button>
 
 
